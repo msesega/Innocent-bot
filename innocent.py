@@ -1,6 +1,6 @@
 # CONFIG
 # ---------
-token = "" # Això és més difícil de trobar com abans es podia. Si us plau, busca tu mateix com trobar-ho.
+token = "" # Per trobar-ho, obre les eines de desenvolupador al Discord (CTRL+SHIFT+I), després vés a "Application", "Local Storage", clica l'enllaç de Discord, i fes CTRL+R o F5. Apareixerà una secció anomenada "token". Així es troba el token d'usuari.
 prefix = "~" # Això s'utilitzarà al començament de les ordres.
 # ----------
 
