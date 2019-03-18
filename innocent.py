@@ -6,7 +6,7 @@ prefix = "~" # Això s'utilitzarà al començament de les ordres.
 
 import discord
 from discord.ext import commands
-# Imports the needed libs.
+# Importa les llibreries necessàries.
 
 print ("Espereu..")
 
