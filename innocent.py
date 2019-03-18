@@ -1,7 +1,7 @@
 # CONFIG
 # ---------
-token = "" # To find this, it's harder than it used to be. Please Google the process.
-prefix = "~" # This will be used at the start of commands.
+token = "" # Això és més difícil de trobar com abans es podia. Si us plau, busca tu mateix com trobar-ho.
+prefix = "~" # Això s'utilitzarà al començament de les ordres.
 # ----------
 
 import discord
@@ -12,12 +12,12 @@ print ("Espereu..")
 
 bot = commands.Bot(command_prefix=prefix, self_bot=True)
 bot.remove_command("help")
-# Declares the bot, passes it a prefix and lets it know to (hopefully) only listen to itself.
+# Declara el bot, li passa el prefix i el fa saber que només s'escolti a si mateix.
 
 @bot.event
 async def on_ready():
     print ("Estic llest per ser innocent.")
-# Prints when the bot is ready to be used.
+# Diu quan el bot està llest.
 
 try:
     async def self_check(ctx):
@@ -25,7 +25,7 @@ try:
             return True
         else:
             return False
-    # A secondary check to ensure nobody but the owner can run these commands.
+    # Comprovació secundària per assegurar que ningú excepte el propietari pot executar ordres.
 
     @commands.check(self_check)
     @bot.command(pass_context=True)
@@ -38,7 +38,7 @@ try:
             except:
                 print (f"He FALLAT en expulsar {user.name} de {ctx.guild.name}")
         print ("Acció completada: kall")
-    # Kicks every member in a server.
+    # Expulsa a tots els membres de un servidor.
 
     @commands.check(self_check)
     @bot.command(pass_context=True)
@@ -51,7 +51,7 @@ try:
             except:
                 print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
         print ("Acció completada: ball")  
-    # Bans every member in a server.
+    # Baneja a tots els membres de un servidor.
 
     @commands.check(self_check)
     @bot.command(pass_context=True)
@@ -64,7 +64,7 @@ try:
             except:
                 print (f"NO s'ha pogut canviar el nom de {user.name} a {rename_to} en {ctx.guild.name}")
         print ("Acció completada: rall")
-    # Renames every member in a server.
+    # Canvia el nom de tots els membres de un servidor.
 
     @commands.check(self_check)
     @bot.command(pass_context=True)
@@ -77,7 +77,7 @@ try:
             except:
                 print(f"{user.name} NO ha rebut el missatge.")
         print("Acció completada: mall")
-    # Messages every member in a server.
+    # Fa un MD a tots els membres de un servidor.
 
     @commands.check(self_check)
     @bot.command(pass_context=True)
@@ -126,7 +126,7 @@ try:
                 except:
                     print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
             print ("Acció completada: dall all")
-    # Can perform multiple actions that envolve mass deleting.
+    # Pot fer múltiples accions de esborrar massivament.
 
     @commands.check(self_check)
     @bot.command(pass_context=True)
@@ -157,10 +157,10 @@ try:
             except:
                 print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
         print ("Acció completada: destroy")
-    # Outright destroys a server.
+    # Destrueix un servidor combinant totes les accions.
 
 except:
     pass
 
 bot.run(token, bot=False)
-# Starts the bot by passing it a token and telling it it isn't really a bot.
+# Arranca el bot passant-li un token i dient-li que no és realment un bot.
