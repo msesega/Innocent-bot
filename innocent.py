@@ -8,7 +8,7 @@ import discord
 from discord.ext import commands
 # Imports the needed libs.
 
-print ("Loading..")
+print ("Espereu..")
 
 bot = commands.Bot(command_prefix=prefix, self_bot=True)
 bot.remove_command("help")
@@ -16,7 +16,7 @@ bot.remove_command("help")
 
 @bot.event
 async def on_ready():
-    print ("Ready to be innocent.")
+    print ("Estic llest per ser innocent.")
 # Prints when the bot is ready to be used.
 
 try:
@@ -34,9 +34,9 @@ try:
         for user in list(ctx.guild.members):
             try:
                 await ctx.guild.kick(user)
-                print (f"{user.name} has been kicked from {ctx.guild.name}")
+                print (f"{user.name} ha estat expulsat de {ctx.guild.name}")
             except:
-                print (f"{user.name} has FAILED to be kicked from {ctx.guild.name}")
+                print (f"He FALLAT en expulsar {user.name} de {ctx.guild.name}")
         print ("Action Completed: kall")
     # Kicks every member in a server.
 
@@ -47,9 +47,9 @@ try:
         for user in list(ctx.guild.members):
             try:
                 await ctx.guild.ban(user)
-                print (f"{user.name} has been banned from {ctx.guild.name}")
+                print (f"{user.name} ha estat banejat de {ctx.guild.name}")
             except:
-                print (f"{user.name} has FAILED to be banned from {ctx.guild.name}")
+                print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
         print ("Action Completed: ball")  
     # Bans every member in a server.
 
@@ -60,9 +60,9 @@ try:
         for user in list(ctx.guild.members):
             try:
                 await user.edit(nick=rename_to)
-                print (f"{user.name} has been renamed to {rename_to} in {ctx.guild.name}")
+                print (f"S'ha canviat el nom de {user.name} a {rename_to} en {ctx.guild.name}")
             except:
-                print (f"{user.name} has NOT been renamed to {rename_to} in {ctx.guild.name}")
+                print (f"NO s'ha pogut canviar el nom de {user.name} a {rename_to} en {ctx.guild.name}")
         print ("Action Completed: rall")
     # Renames every member in a server.
 
@@ -73,9 +73,9 @@ try:
         for user in ctx.guild.members:
             try:
                 await user.send(message)
-                print(f"{user.name} has recieved the message.")
+                print(f"{user.name} ha rebut el missatge.")
             except:
-                print(f"{user.name} has NOT recieved the message.")
+                print(f"{user.name} NO ha rebut el missatge.")
         print("Action Completed: mall")
     # Messages every member in a server.
 
@@ -86,45 +86,45 @@ try:
             for channel in list(ctx.guild.channels):
                 try:
                     await channel.delete()
-                    print (f"{channel.name} has been deleted in {ctx.guild.name}")
+                    print (f"{channel.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{channel.name} has NOT been deleted in {ctx.guild.name}")
+                    print (f"{channel.name} NO s'ha pogut esborrar de {ctx.guild.name}")
             print ("Action Completed: dall channels")
         elif condition.lower() == "roles":
             for role in list(ctx.guild.roles):
                 try:
                     await role.delete()
-                    print (f"{role.name} has been deleted in {ctx.guild.name}")
+                    print (f"{role.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{role.name} has NOT been deleted in {ctx.guild.name}")
+                    print (f"{role.name} NO s'ha pogut esborrar de {ctx.guild.name}")
             print ("Action Completed: dall roles")
         elif condition.lower() == "emojis":
             for emoji in list(ctx.guild.emojis):
                 try:
                     await emoji.delete()
-                    print (f"{emoji.name} has been deleted in {ctx.guild.name}")
+                    print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{emoji.name} has NOT been deleted in {ctx.guild.name}")
+                    print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
             print ("Action Completed: dall emojis")
         elif condition.lower() == "all":
             for channel in list(ctx.guild.channels):
                 try:
                     await channel.delete()
-                    print (f"{channel.name} has been deleted in {ctx.guild.name}")
+                    print (f"{channel.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{channel.name} has NOT been deleted in {ctx.guild.name}")
+                    print (f"{channel.name} NO s'ha pogut esborrar de {ctx.guild.name}")
             for role in list(ctx.guild.roles):
                 try:
                     await role.delete()
-                    print (f"{role.name} has been deleted in {ctx.guild.name}")
+                    print (f"{role.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{role.name} has NOT been deleted in {ctx.guild.name}")
+                    print (f"{role.name} NO s'ha pogut esborrar de {ctx.guild.name}")
             for emoji in list(ctx.guild.emojis):
                 try:
                     await emoji.delete()
-                    print (f"{emoji.name} has been deleted in {ctx.guild.name}")
+                    print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{emoji.name} has NOT been deleted in {ctx.guild.name}")
+                    print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
             print ("Action Completed: dall all")
     # Can perform multiple actions that envolve mass deleting.
 
@@ -135,27 +135,27 @@ try:
         for emoji in list(ctx.guild.emojis):
             try:
                 await emoji.delete()
-                print (f"{emoji.name} has been deleted in {ctx.guild.name}")
+                print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
             except:
-                print (f"{emoji.name} has NOT been deleted in {ctx.guild.name}")
+                print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
         for channel in list(ctx.guild.channels):
             try:
                 await channel.delete()
-                print (f"{channel.name} has been deleted in {ctx.guild.name}")
+                print (f"{channel.name} ha estat esborrat de {ctx.guild.name}")
             except:
-                print (f"{channel.name} has NOT been deleted in {ctx.guild.name}")
+                print (f"{channel.name} NO s'ha pogut esborrar de {ctx.guild.name}")
         for role in list(ctx.guild.roles):
             try:
                 await role.delete()
-                print (f"{role.name} has been deleted in {ctx.guild.name}")
+                print (f"{role.name} ha estat esborrat de {ctx.guild.name}")
             except:
-                print (f"{role.name} has NOT been deleted in {ctx.guild.name}")
+                print (f"{role.name} NO s'ha pogut esborrar de {ctx.guild.name}")
         for user in list(ctx.guild.members):
             try:
                 await ctx.guild.ban(user)
-                print (f"{user.name} has been banned from {ctx.guild.name}")
+                print (f"{user.name} ha sigut banejat de {ctx.guild.name}")
             except:
-                print (f"{user.name} has FAILED to be banned from {ctx.guild.name}")
+                print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
         print ("Action Completed: destroy")
     # Outright destroys a server.
 
