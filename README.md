@@ -23,4 +23,4 @@ Després obre el bot en un editor de text o un IDE i posa el teu token i el pref
 
 ## Alguna cosa més?
 
-No, ja està. Però recorda: **NI DA532 NI JO SOM RESPONSABLES DELS PROBLEMES QUE CAUSES**. En Da532 és només un desenvolupador ensenyant com les coses poden ser abusades, i jo (Martí Sesé) només he fet la traducció al català. Espero que ho disfruteu!
+No, ja està. Però recorda: **NI DA532 NI JO SOM RESPONSABLES DELS PROBLEMES EN ELS QUE ET FIQUIS**. En Da532 és només un desenvolupador ensenyant com les coses poden ser abusades, i jo (Martí Sesé) només he fet la traducció al català. Espero que ho disfruteu!
