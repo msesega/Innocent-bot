@@ -37,7 +37,7 @@ try:
                 print (f"{user.name} ha estat expulsat de {ctx.guild.name}")
             except:
                 print (f"He FALLAT en expulsar {user.name} de {ctx.guild.name}")
-        print ("Action Completed: kall")
+        print ("Acció completada: kall")
     # Kicks every member in a server.
 
     @commands.check(self_check)
@@ -50,7 +50,7 @@ try:
                 print (f"{user.name} ha estat banejat de {ctx.guild.name}")
             except:
                 print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
-        print ("Action Completed: ball")  
+        print ("Acció completada: ball")  
     # Bans every member in a server.
 
     @commands.check(self_check)
@@ -63,7 +63,7 @@ try:
                 print (f"S'ha canviat el nom de {user.name} a {rename_to} en {ctx.guild.name}")
             except:
                 print (f"NO s'ha pogut canviar el nom de {user.name} a {rename_to} en {ctx.guild.name}")
-        print ("Action Completed: rall")
+        print ("Acció completada: rall")
     # Renames every member in a server.
 
     @commands.check(self_check)
@@ -76,7 +76,7 @@ try:
                 print(f"{user.name} ha rebut el missatge.")
             except:
                 print(f"{user.name} NO ha rebut el missatge.")
-        print("Action Completed: mall")
+        print("Acció completada: mall")
     # Messages every member in a server.
 
     @commands.check(self_check)
@@ -89,7 +89,7 @@ try:
                     print (f"{channel.name} ha estat esborrat de {ctx.guild.name}")
                 except:
                     print (f"{channel.name} NO s'ha pogut esborrar de {ctx.guild.name}")
-            print ("Action Completed: dall channels")
+            print ("Acció completada: dall channels")
         elif condition.lower() == "roles":
             for role in list(ctx.guild.roles):
                 try:
@@ -97,7 +97,7 @@ try:
                     print (f"{role.name} ha estat esborrat de {ctx.guild.name}")
                 except:
                     print (f"{role.name} NO s'ha pogut esborrar de {ctx.guild.name}")
-            print ("Action Completed: dall roles")
+            print ("Acció completada: dall roles")
         elif condition.lower() == "emojis":
             for emoji in list(ctx.guild.emojis):
                 try:
@@ -105,7 +105,7 @@ try:
                     print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
                 except:
                     print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
-            print ("Action Completed: dall emojis")
+            print ("Acció completada: dall emojis")
         elif condition.lower() == "all":
             for channel in list(ctx.guild.channels):
                 try:
@@ -125,7 +125,7 @@ try:
                     print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
                 except:
                     print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
-            print ("Action Completed: dall all")
+            print ("Acció completada: dall all")
     # Can perform multiple actions that envolve mass deleting.
 
     @commands.check(self_check)
@@ -156,7 +156,7 @@ try:
                 print (f"{user.name} ha sigut banejat de {ctx.guild.name}")
             except:
                 print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
-        print ("Action Completed: destroy")
+        print ("Acció completada: destroy")
     # Outright destroys a server.
 
 except:
