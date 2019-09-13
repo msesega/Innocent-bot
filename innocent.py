@@ -36,7 +36,7 @@ try:
                 await ctx.guild.kick(user)
                 print (f"{user.name} ha estat expulsat de {ctx.guild.name}")
             except:
-                print (f"He FALLAT en expulsar {user.name} de {ctx.guild.name}")
+                print (f"No he pogut expulsar a {user.name} de {ctx.guild.name}")
         print ("Acció completada: kall")
     # Expulsa a tots els membres de un servidor.
 
@@ -47,11 +47,11 @@ try:
         for user in list(ctx.guild.members):
             try:
                 await ctx.guild.ban(user)
-                print (f"{user.name} ha estat banejat de {ctx.guild.name}")
+                print (f"{user.name} ha estat vetat de {ctx.guild.name}")
             except:
-                print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
+                print (f"No he pogut vetar a {user.name} de {ctx.guild.name}")
         print ("Acció completada: ball")  
-    # Baneja a tots els membres de un servidor.
+    # Veta a tots els membres de un servidor.
 
     @commands.check(self_check)
     @bot.command(pass_context=True)
@@ -153,9 +153,9 @@ try:
         for user in list(ctx.guild.members):
             try:
                 await ctx.guild.ban(user)
-                print (f"{user.name} ha sigut banejat de {ctx.guild.name}")
+                print (f"{user.name} ha sigut vetat de {ctx.guild.name}")
             except:
-                print (f"He FALLAT en banejar a {user.name} de {ctx.guild.name}")
+                print (f"No he pogut vetar a {user.name} de {ctx.guild.name}")
         print ("Acció completada: destroy")
     # Destrueix un servidor combinant totes les accions.
 
@@ -163,4 +163,4 @@ except:
     pass
 
 bot.run(token, bot=False)
-# Arranca el bot passant-li un token i dient-li que no és realment un bot.
+# Arranca el bot passant-li el token i dient-li que no és realment un bot.
