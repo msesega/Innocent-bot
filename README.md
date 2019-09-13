@@ -5,7 +5,7 @@ Un bot d'usuari (self-bot) del Discord per destruir, bobmardejar, i causar caos 
 ## Ordres
 
 * `kall` - Vol dir "kick all" que expulsa a tots els membres d'un servidor mentre tinguis permisos
-* `ball` - Vol dir "ban all" que baneja a tots els membres de un servidor mentre tinguis permisos
+* `ball` - Vol dir "ban all" que veta a tots els membres de un servidor mentre tinguis permisos
 * `rall rename_to` - Vol dir "rename all" que canvia el nom de tots els membres de un servidor a la condició "rename_to" escollida mentre tinguis permisos.
 * `mall message` - Vol dir "message all" que fa un MD de la condició "message" escollida a tots els membres de un servidor.
 * `dall condition` - Vol dir "delete all" que esborra la condició escollida de entre: `channels`, `roles`, `emojis` i `all`.
