@@ -17,7 +17,7 @@ Després, instal·la les dependències:
 
 * discord.py rewrite
 
-Pots fer-ho escrivint `pip install -U git+https://github.com/Rapptz/discord.py@rewrite` al cmd mentre Python estigui al PATH.
+Pots fer-ho escrivint `pip install -U git+https://github.com/THEGUY3ds/discord.py@rewrite` al cmd mentre Python estigui al PATH.
 
 Després obre el bot en un editor de text o un IDE i posa el teu token i el prefix que vulguis.
 
