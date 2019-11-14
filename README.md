@@ -15,7 +15,7 @@ Un bot d'usuari (self-bot) del Discord per destruir, bobmardejar, i causar caos 
 Descarrega els fitxers i assegura't de que Python 3.7 està instal·lat.
 Després, instal·la les dependències:
 
-* discord.py rewrite
+* discord.py
 
 Pots fer-ho escrivint `pip install -U git+https://github.com/Rapptz/discord.py` al cmd mentre Python estigui al PATH.
 
