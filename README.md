@@ -1,6 +1,6 @@
 # Innocent-bot (En català)
 
-Un bot d'usuari (self-bot) del Discord per destruir, bobmardejar, i causar caos en servidors fet per Da532 i traduït al català per Martí Sesé. 💣
+Un bot d'usuari (self-bot) del Discord per destruir, bobmardejar, i causar caos en servidors fet per Da532 i traduït al català per mi. 💣
 
 ## Ordres
 
@@ -23,4 +23,4 @@ Després obre el bot en un editor de text o un IDE i posa el teu token i el pref
 
 ## Alguna cosa més?
 
-No, ja està. Però recorda: **NI DA532 NI JO SOM RESPONSABLES DELS PROBLEMES EN ELS QUE ET FIQUIS**. En Da532 és només un desenvolupador ensenyant com les coses poden ser abusades, i jo (Martí Sesé) només he fet la traducció al català. Espero que ho disfruteu!
+No, ja està. Però recorda: **NI DA532 NI JO SOM RESPONSABLES DELS PROBLEMES EN ELS QUE ET FIQUIS**. En Da532 és només un desenvolupador ensenyant com les coses poden ser abusades, i jo només he fet la traducció al català. Espero que ho disfruteu!
